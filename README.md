@@ -2,9 +2,7 @@
 
 Estudiante de Ingeniería en Ciencias y Sistemas en la UMG 
 
-
 Santa Cruz Verapaz, Alta Verapaz – Guatemala  
-
 
 Apasionado por el desarrollo web, automatización y soluciones digitales locales
 
@@ -12,9 +10,7 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 ## 🤓 Tecnologías que manejo
 - HTML, CSS, JavaScript.
 
-
   ![My Skills](https://skillicons.dev/icons?i=html,css,js)
-
 
 - Java y Kotlin.
 
