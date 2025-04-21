@@ -16,13 +16,15 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 
   ![My Skills](https://skillicons.dev/icons?i=java,kotlin)
 
-- Microsoft Visual Studio 2022, VS Code
-
-  ![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode)
-
 - C++, C#
 
   ![My Skills](https://skillicons.dev/icons?i=cs,cpp)
+
+- Microsoft Visual Studio 2022, VS Code, Sublime Text, Android Studio
+
+  ![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode,sublime,androidstudio)
+
+  
 ## ☝️ Proyectos destacados
 
 ### [OCR] (https://rod-rod-rod.github.io/ocrgratuito/)
