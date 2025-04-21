@@ -9,7 +9,7 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 - HTML, CSS, JavaScript.
 
 
-![My Skills](https://skillicons.dev/icons?i=html,css,js)
+  ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 
 
 - Java y Kotlin.
