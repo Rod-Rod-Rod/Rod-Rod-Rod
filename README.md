@@ -6,14 +6,11 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 
 
 ## 🤓 Tecnologías que manejo
-- HTML, CSS, JavaScript   <img src="./icons/Java-Dark.svg" width="48">
+- HTML, CSS, JavaScript
+  ![My Skills](https://skillicons.dev/icons?i=html,css,js)
 - Java y Kotlin
 - Pseudocódigo, Macros
 - C++, C#
-
-## Vista previa
-
-![Vista previa](https://i.imgur.com/xyz1234.png)
 
 ## ☝️ Proyectos destacados
 
