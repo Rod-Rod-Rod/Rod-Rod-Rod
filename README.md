@@ -20,7 +20,7 @@ Santa Cruz Verapaz, Alta Verapaz – Guatemala
 
 - C++, C#
 
-  ![My Skills](https://skillicons.dev/icons?i=cs,cpp)
+  ![My Skills](https://skillicons.dev/icons?i=cpp,cs)
 
 - Microsoft Visual Studio 2022, VS Code, Sublime Text, Android Studio
 
