@@ -11,6 +11,10 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 - Pseudocódigo, Macros
 - C++, C#
 
+## Vista previa
+
+![Vista previa](https://i.imgur.com/xyz1234.png)
+
 ## ☝️ Proyectos destacados
 
 ### [OCR] (https://rod-rod-rod.github.io/ocrgratuito/)
