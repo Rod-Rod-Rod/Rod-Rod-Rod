@@ -14,12 +14,15 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 
 - Java y Kotlin.
 
+  ![My Skills](https://skillicons.dev/icons?i=java,kotlin)
 
-- Pseudocódigo, Macros.
+- Microsoft Visual Studio 2022, VS Code
 
+  ![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode)
 
 - C++, C#
 
+  ![My Skills](https://skillicons.dev/icons?i=cs,cpp)
 ## ☝️ Proyectos destacados
 
 ### [OCR] (https://rod-rod-rod.github.io/ocrgratuito/)
