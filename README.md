@@ -6,7 +6,7 @@ Apasionado por el desarrollo web, automatización y soluciones digitales locales
 
 
 ## 🤓 Tecnologías que manejo
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript   <img src="./icons/Java-Dark.svg" width="48">
 - Java y Kotlin
 - Pseudocódigo, Macros
 - C++, C#
