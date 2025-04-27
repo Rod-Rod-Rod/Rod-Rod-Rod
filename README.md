@@ -29,7 +29,7 @@ Santa Cruz Verapaz, Alta Verapaz – Guatemala
   
 ## ☝️ Proyectos destacados
 
-### [OCR] (https://rod-rod-rod.github.io/ocrgratuito/)
+### [OCR] <a target="_blank">(https://rod-rod-rod.github.io/ocrgratuito/)</a>
 Convierte archivos de imagpen a texto
 
 ### [Creador de Contraseñas] (https://rod-rod-rod.github.io/contragenerator/index.html)
