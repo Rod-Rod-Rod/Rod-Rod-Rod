@@ -344,3 +344,7 @@ h2 {
 .modo-oscuro .button-link {
     background-color: #556b4d;
 }
+
+.modo-oscuro .cv {
+    filter: invert(0);
+}
