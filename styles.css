@@ -13,6 +13,22 @@ body {
     padding: 20px;
 }
 
+/* Indicador de dispositivo */
+.device-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2d5a27;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    font-size: 0.8em;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -271,13 +287,15 @@ body {
     right: 30px;
     background: #52b788;
     color: white;
+    text-decoration: none;
     border: none;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
     transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .print-btn:hover {
@@ -291,4 +309,223 @@ body {
 
 .experience-list li {
     text-align: justify;
+}
+
+/* RESPONSIVE DESIGN - ESCRITORIO */
+@media (min-width: 1024px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .name {
+        font-size: 2.5em;
+    }
+    
+    .photo-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .contact-info {
+        gap: 30px;
+    }
+}
+
+/* RESPONSIVE DESIGN - TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .name {
+        font-size: 2.2em;
+    }
+    
+    .photo-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .contact-info {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-item {
+        font-size: 0.95em;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .print-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+/* RESPONSIVE DESIGN - MÓVIL */
+@media (max-width: 767px) {
+    .device-indicator {
+        position: static;
+        margin-bottom: 15px;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 0.9em;
+    }
+    
+    .body {
+        padding: 10px;
+    }
+    
+    .container {
+        border-radius: 10px;
+        margin: 0;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+    
+    .header {
+        padding: 25px 15px;
+    }
+    
+    .name {
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+    
+    .title {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    
+    .photo-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .contact-item {
+        font-size: 0.85em;
+        text-align: center;
+    }
+    
+    .section h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    
+    .experience-item, .education-item, .certification-item {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .job-title {
+        font-size: 1em;
+    }
+    
+    .cert-link {
+        font-size: 1em;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .skill-item {
+        font-size: 0.85em;
+        padding: 6px 10px;
+    }
+    
+    .profile-text {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    .print-btn {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+    
+    .experience-item:hover, .education-item:hover, .certification-item:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* MÓVIL MUY PEQUEÑO */
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.6em;
+    }
+    
+    .title {
+        font-size: 0.9em;
+    }
+    
+    .photo-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .contact-item {
+        font-size: 0.8em;
+    }
+    
+    .section h2 {
+        font-size: 1.2em;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .experience-item, .education-item, .certification-item {
+        padding: 12px;
+    }
 }
