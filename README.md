@@ -1,16 +1,39 @@
-## Hi there 👋
+## ✌️ Hola, soy Rodrigo Andrés Yalibat del Cid
 
-<!--
-**Rod-Rod-Rod/Rod-Rod-Rod** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudiante de Ingeniería en Ciencias y Sistemas
 
-Here are some ideas to get you started:
+Universidad Mariano Gálvez – Campus Cobán
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Santa Cruz Verapaz, Alta Verapaz – Guatemala  
+
+ Apasionado por el desarrollo web, automatización y soluciones digitales locales.
+
+
+## 🤓 Tecnologías que manejo
+- HTML, CSS, JavaScript.
+
+  ![My Skills](https://skillicons.dev/icons?i=html,css,js)
+
+- Java y Kotlin.
+
+  ![My Skills](https://skillicons.dev/icons?i=java,kotlin)
+
+- C++, C#
+
+  ![My Skills](https://skillicons.dev/icons?i=cpp,cs)
+
+- Microsoft Visual Studio 2022, VS Code, Sublime Text, Android Studio
+
+  ![My Skills](https://skillicons.dev/icons?i=visualstudio,vscode,sublime,androidstudio)
+
+  
+## ☝️ Proyectos destacados
+
+### [OCR] (https://rod-rod-rod.github.io/ocrgratuito/)
+Convierte archivos de imagpen a texto
+
+### [Creador de Contraseñas] (https://rod-rod-rod.github.io/contragenerator/index.html)
+Generador que permite crear una contraseña de 3 tipos:
+- Simple
+- Con un dato personalizado
+- Con una longitud de contraseña puesta con el usuario
