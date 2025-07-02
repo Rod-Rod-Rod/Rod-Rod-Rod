@@ -1,36 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.transform = 'translateY(0)';
-                        entry.target.style.opacity = '1';
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+    // Efectos de animación al aparecer
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+            }
         });
+    }, {
+        threshold: 0.1
+    });
 
-        // Efecto hover en elementos de experiencia
-        document.querySelectorAll('.experience-item, .education-item, .certification-item').forEach(item => {
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Efectos hover solo para dispositivos con mouse
+    if (window.matchMedia("(hover: hover)").matches) {
+        document.querySelectorAll('.experience-item, .education-item, .certification-item, .repository-item, .contract-item').forEach(item => {
             item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateX(10px) scale(1.02)';
+                this.style.transform = 'translateX(5px)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                this.style.borderLeftColor = '#2d5a27';
             });
             
             item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateX(0) scale(1)';
+                this.style.transform = '';
+                this.style.boxShadow = '';
+                this.style.borderLeftColor = '#52b788';
             });
         });
 
         // Efecto de escritura para el nombre
-        document.addEventListener('DOMContentLoaded', function() {
-            const nameElement = document.querySelector('.name');
+        const nameElement = document.querySelector('.name');
+        if (nameElement) {
             const originalText = nameElement.textContent;
             nameElement.textContent = '';
             
@@ -44,9 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             setTimeout(typeWriter, 500);
-        });
+        }
+    }
 
-        // Efectos de paralax sutiles
+    // Efectos de paralax solo en desktop
+    if (window.innerWidth > 1023) {
         document.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
             const scrolled = window.pageYOffset;
@@ -56,3 +61,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 header.style.transform = `translateY(${rate}px)`;
             }
         });
+    }
+});

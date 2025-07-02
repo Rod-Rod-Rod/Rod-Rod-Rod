@@ -37,6 +37,7 @@ body {
     overflow: hidden;
     animation: slideIn 0.8s ease-out;
     padding: 40px;
+    text-align: justify;
 }
 
 h1{

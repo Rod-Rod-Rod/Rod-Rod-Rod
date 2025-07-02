@@ -102,7 +102,7 @@ ul {
 }
 
 .name {
-    font-size: 3px;
+    font-size: 2.5em;
     font-weight: 400;
     margin-bottom: 10px;
     z-index: 1;
@@ -249,7 +249,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.skill-item{
+.skill-item {
     background: #ecf0f1;
     padding: 8px 12px;
     border-radius: 20px;
@@ -259,7 +259,7 @@ ul {
     transition: all 0.3s ease;
 }
 
-.more-proyects{
+.more-proyects {
     background: #ecf0f1;
     padding: 8px 10px;
     border-radius: 20px;
@@ -271,7 +271,7 @@ ul {
     color: #333;
 }
 
-.skill-item:hover{
+.skill-item:hover {
     background: #52b788;
     color: white;
     transform: scale(1.05);
@@ -338,39 +338,11 @@ ul {
     text-align: justify;
 }
 
-/* RESPONSIVE DESIGN - ESCRITORIO */
-@media (min-width: 1024px) {
-    .main-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-    
-    .name {
-        font-size: 2.5em;
-    }
-    
-    .photo-container {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .contact-info {
-        gap: 30px;
-    }
-}
-
 /* RESPONSIVE DESIGN - TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-        margin: 10px;
+        margin: 15px;
         border-radius: 15px;
-    }
-
-    .icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
     }
     
     .main-content {
@@ -388,88 +360,49 @@ ul {
     }
     
     .photo-container {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
     
     .contact-info {
         gap: 20px;
-        flex-direction: column;
-        align-items: center;
     }
     
     .contact-item {
         font-size: 0.95em;
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .section h2 {
+        font-size: 1.4em;
     }
     
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .experience-item, .education-item, .certification-item, 
+    .repository-item, .contract-item {
+        padding: 18px;
     }
     
     .print-btn {
         bottom: 20px;
         right: 20px;
         padding: 12px;
-        font-size: 13px;
-    }
-
-        .additional-info {
-        margin-top: 15px;
-        padding: 15px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .repository-item {
-        font-size: 0.95em;
     }
 }
 
 /* RESPONSIVE DESIGN - MÓVIL */
 @media (max-width: 767px) {
-    .device-indicator {
-        position: static;
-        margin-bottom: 15px;
-        text-align: center;
-        border-radius: 15px;
-        font-size: 0.9em;
-    }
-
-    .icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
-    }
-
-    .additional-info {
-        margin-top: 10px;
-        padding: 10px;
-    }
-    .section {
-        margin-bottom: 15px;
-    }
-    .repository-item {
-        font-size: 0.9em;
-    }
-    
-    .body {
+    body {
         padding: 10px;
     }
     
     .container {
-        border-radius: 10px;
-        margin: 0;
+        border-radius: 15px;
+        margin: 0 auto;
     }
     
-    .main-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 20px;
+    .device-indicator {
+        position: static;
+        margin: 0 auto 15px;
+        width: fit-content;
     }
     
     .header {
@@ -478,131 +411,83 @@ ul {
     
     .name {
         font-size: 1.8em;
-        margin-bottom: 8px;
     }
     
     .title {
-        font-size: 1em;
-        margin-bottom: 15px;
+        font-size: 1.2em;
     }
     
     .photo-container {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 15px;
+        width: 110px;
+        height: 110px;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
     }
     
     .contact-info {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         align-items: center;
     }
     
     .contact-item {
-        font-size: 0.85em;
-        text-align: center;
+        justify-content: center;
     }
     
     .section h2 {
         font-size: 1.3em;
-        margin-bottom: 15px;
     }
     
-    .experience-item, .education-item, .certification-item, .repository-item, .contract-item{
-        padding: 15px;
+    .experience-item, .education-item, .certification-item, 
+    .repository-item, .contract-item {
+        padding: 16px;
         margin-bottom: 20px;
-    }
-    
-    .job-title {
-        font-size: 1em;
-    }
-    
-    .cert-link {
-        font-size: 1em;
     }
     
     .skills-grid {
         grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .skill-item {
-        font-size: 0.85em;
-        padding: 6px 10px;
-    }
-    
-    .profile-text {
-        font-size: 0.9em;
-        line-height: 1.6;
     }
     
     .info-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
     }
     
     .info-item {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
         gap: 5px;
     }
     
     .print-btn {
-        position: fixed;
         bottom: 15px;
         right: 15px;
-        padding: 10px;
-        font-size: 12px;
-        border-radius: 40px;
-    }
-    
-    .experience-item:hover, .education-item:hover, .certification-item:hover, .contract-item:hover, .repository-item:hover {
-        transform: translateY(-2px);
-    }
-    .experience-item:hover, .education-item:hover, 
-    .certification-item:hover, .repository-item:hover, 
-    .contract-item:hover {
-        transform: none !important;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-
-    /* Añadir transiciones consistentes */
-    .experience-item, .education-item, .certification-item, 
-    .repository-item, .contract-item, .skill-item, 
-    .more-proyects {
-        transition: all 0.3s ease;
-    }
-
-    /* Mejorar la consistencia en los botones */
-    .print-btn {
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
-    }
-
-    /* Asegurar consistencia en los enlaces */
-    .cert-link {
-        transition: all 0.3s ease;
+        padding: 12px;
+        font-size: 13px;
     }
 }
-/* MÓVIL MUY PEQUEÑO */
+
+/* RESPONSIVE DESIGN - MÓVIL PEQUEÑO */
 @media (max-width: 480px) {
     .name {
         font-size: 1.6em;
     }
     
     .title {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
     .photo-container {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
     .contact-item {
-        font-size: 0.8em;
+        font-size: 0.85em;
+        text-align: center;
     }
     
     .section h2 {
@@ -613,32 +498,18 @@ ul {
         padding: 15px;
     }
     
-    .experience-item, .education-item, .certification-item, .repository-item, .contract-item {
-        padding: 12px;
-        margin-bottom: 15px;
+    .experience-item, .education-item, .certification-item, 
+    .repository-item, .contract-item {
+        padding: 14px;
     }
     
     .skill-item, .more-proyects {
-        font-size: 0.8em;
-        padding: 5px 8px;
-    }
-    
-    .profile-text {
         font-size: 0.85em;
+        padding: 6px 10px;
     }
     
     .print-btn {
-        bottom: 10px;
-        right: 10px;
-        padding: 8px;
-        font-size: 11px;
+        padding: 10px;
+        font-size: 12px;
     }
-}
-
-/* Asegurar consistencia en los iconos para todos los dispositivos */
-.icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
 }
