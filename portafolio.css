@@ -1,7 +1,12 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+ul{
+    padding-left: 20px;
 }
 
 body {
@@ -13,21 +18,7 @@ body {
     padding: 20px;
 }
 
-.device-indicator {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    color: #2d5a27;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    font-size: 0.8em;
-}
-
+/* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,60 +26,61 @@ body {
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     overflow: hidden;
+    padding: 40px;
     animation: slideIn 0.8s ease-out;
-    padding: 40px;
-    text-align: justify;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 3em;
-    color: #2d5a27;
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* Header */
 .header {
-    background: linear-gradient(135deg, #1b4332, #2d5a27);
-    color: white;
-    padding: 40px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 30px;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-    animation: shine 3s infinite;
+.header h1 {
+    color: #2d5a27;
+    font-size: 3em;
+    margin-bottom: 15px;
 }
 
-ul {
-    padding-left: 20px;
-}
-
+/* Items de portafolio */
 .proy-item {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding: 20px;
     background: #f8f9fa;
     border-radius: 10px;
-    border-left: 5px solid #52b788;
-    transition: all 0.2s ease;
+    border-left: 4px solid #52b788;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
-.proy-item:hover{
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.proy-item:nth-child(1) { animation-delay: 0.2s; }
+.proy-item:nth-child(2) { animation-delay: 0.4s; }
+
+.proy-item:hover {
     transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-left-color: #2d5a27;
 }
 
-.proy-item {
+/* Contenido de cada proyecto */
+.proy-content {
     display: flex;
-    align-items: center;
     gap: 30px;
 }
 
@@ -103,13 +95,21 @@ ul {
     align-items: center;
 }
 
+/* Imágenes de proyectos */
 .project-image {
-    max-height: 200px;
+    max-width: 100%;
     height: auto;
+    max-height: 200px;
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
 }
 
+.project-image:hover {
+    transform: scale(1.03);
+}
+
+/* Botón de regreso */
 .return {
     position: fixed;
     bottom: 30px;
@@ -130,4 +130,95 @@ ul {
 .return:hover {
     background: #2d5a27;
     transform: scale(1.1);
+}
+
+/* Indicador de dispositivo */
+.device-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2d5a27;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    font-size: 0.8em;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1023px) {
+    .container {
+        padding: 30px;
+    }
+    
+    .header h1 {
+        font-size: 2.5em;
+    }
+    
+    .proy-content {
+        flex-direction: column;
+    }
+    
+    .right-column {
+        order: -1;
+        margin-bottom: 20px;
+    }
+    
+    .project-image {
+        max-height: 250px;
+    }
+    
+    .return {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .proy-item {
+        padding: 16px;
+    }
+    
+    .return {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    .proy-item {
+        padding: 14px;
+    }
+    
+    .return {
+        padding: 10px;
+        font-size: 12px;
+    }
 }
