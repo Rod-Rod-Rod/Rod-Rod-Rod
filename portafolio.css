@@ -109,6 +109,83 @@ body {
     transform: scale(1.03);
 }
 
+/* Barra de lenguajes - CORREGIDA */
+.languages-bar {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.languages-main-bar {
+    height: 8px;
+    background: #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+}
+
+.language-segment {
+    height: 100%;
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+/* Inicializar las barras con width 0 por defecto */
+.language-segment:not(.animated) {
+    width: 0% !important;
+}
+
+.language-segment.html-segment {
+    background: #e34c26;
+}
+
+.language-segment.css-segment {
+    background: #1572b6;
+}
+
+.language-segment.js-segment {
+    background: #f1e05a;
+}
+
+.languages-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.85em;
+}
+
+.language-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.language-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.language-dot.html-dot {
+    background: #e34c26;
+}
+
+.language-dot.css-dot {
+    background: #1572b6;
+}
+
+.language-dot.js-dot {
+    background: #f1e05a;
+}
+
+.language-text {
+    color: #586069;
+    font-weight: 500;
+}
+
 /* Botón de regreso */
 .return {
     position: fixed;
@@ -176,6 +253,15 @@ body {
         right: 20px;
         padding: 12px;
     }
+    
+    .languages-bar {
+        margin-top: 20px;
+    }
+    
+    .languages-labels {
+        gap: 8px;
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 767px) {
@@ -201,6 +287,20 @@ body {
         right: 15px;
         padding: 12px;
         font-size: 13px;
+    }
+    
+    .languages-bar {
+        margin-top: 15px;
+    }
+    
+    .languages-labels {
+        gap: 6px;
+        font-size: 0.75em;
+    }
+    
+    .language-dot {
+        width: 10px;
+        height: 10px;
     }
 }
 
