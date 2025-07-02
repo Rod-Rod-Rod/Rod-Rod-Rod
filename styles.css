@@ -365,6 +365,13 @@ ul {
         margin: 10px;
         border-radius: 15px;
     }
+
+    .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    }
     
     .main-content {
         grid-template-columns: 1fr;
@@ -409,6 +416,17 @@ ul {
         padding: 12px;
         font-size: 13px;
     }
+
+        .additional-info {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .repository-item {
+        font-size: 0.95em;
+    }
 }
 
 /* RESPONSIVE DESIGN - MÓVIL */
@@ -418,6 +436,24 @@ ul {
         margin-bottom: 15px;
         text-align: center;
         border-radius: 15px;
+        font-size: 0.9em;
+    }
+
+    .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    }
+
+    .additional-info {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .section {
+        margin-bottom: 15px;
+    }
+    .repository-item {
         font-size: 0.9em;
     }
     
@@ -531,6 +567,13 @@ ul {
         font-size: 1.6em;
     }
     
+    .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    }
+
     .title {
         font-size: 0.9em;
     }
@@ -556,3 +599,4 @@ ul {
         padding: 12px;
     }
 }
+
