@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.device-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #2d5a27;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    font-size: 0.8em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    animation: slideIn 0.8s ease-out;
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 3em;
+    color: #2d5a27;
+}
+
+.header {
+    background: linear-gradient(135deg, #1b4332, #2d5a27);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    animation: shine 3s infinite;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.proy-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 5px solid #52b788;
+    transition: all 0.2s ease;
+}
+
+.proy-item:hover{
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left-color: #2d5a27;
+}
+
+.proy-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    max-height: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.return {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #52b788;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.return:hover {
+    background: #2d5a27;
+    transform: scale(1.1);
+}
