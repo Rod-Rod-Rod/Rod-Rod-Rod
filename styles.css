@@ -559,21 +559,39 @@ ul {
     .experience-item:hover, .education-item:hover, .certification-item:hover, .contract-item:hover, .repository-item:hover {
         transform: translateY(-2px);
     }
-}
+    .experience-item:hover, .education-item:hover, 
+    .certification-item:hover, .repository-item:hover, 
+    .contract-item:hover {
+        transform: none !important;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
 
+    /* Añadir transiciones consistentes */
+    .experience-item, .education-item, .certification-item, 
+    .repository-item, .contract-item, .skill-item, 
+    .more-proyects {
+        transition: all 0.3s ease;
+    }
+
+    /* Mejorar la consistencia en los botones */
+    .print-btn {
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3);
+    }
+
+    /* Asegurar consistencia en los enlaces */
+    .cert-link {
+        transition: all 0.3s ease;
+    }
+}
 /* MÓVIL MUY PEQUEÑO */
 @media (max-width: 480px) {
     .name {
         font-size: 1.6em;
     }
     
-    .icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
-    }
-
     .title {
         font-size: 0.9em;
     }
@@ -595,8 +613,32 @@ ul {
         padding: 15px;
     }
     
-    .experience-item, .education-item, .certification-item, .repository-item, .contract-item{
+    .experience-item, .education-item, .certification-item, .repository-item, .contract-item {
         padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .skill-item, .more-proyects {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+    
+    .profile-text {
+        font-size: 0.85em;
+    }
+    
+    .print-btn {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px;
+        font-size: 11px;
     }
 }
 
+/* Asegurar consistencia en los iconos para todos los dispositivos */
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
