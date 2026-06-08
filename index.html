@@ -3,197 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Del Cid</title>
+    <title>Rodrigo Yalibat - Desarrollador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="photo-container">
-                <img src="perfil.png" alt="Rodrigo Del Cid" title="Rodrigo Del Cid">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span class="logo-text">Rodrigo</span>
             </div>
-            <h1 class="name">Rodrigo Andrés Yalibat Del Cid</h1>
-            <p class="title">Estudiante de Ingeniería en Ciencias y Sistemas</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span title="Vivienda"> 
-                        <img src="https://cdn-icons-png.flaticon.com/256/10061/10061367.png" alt="location icon" class="icon">
-                        Santa Cruz Verapaz, Alta Verapaz, Guatemala
-                    </span>
-                </div>
-                <div class="contact-item">
-                    <span title="Correo">
-                        <img src="https://images.icon-icons.com/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="email icon" class="icon">
-                        contactoraydc@gmail.com
-                    </span>
-                </div>
-                <div class="contact-item">
-                    <span title="Celular">
-                        <img src="https://marketplace.canva.com/upyr4/MAFN-yupyr4/1/tl/canva-phone-icon-MAFN-yupyr4.png" alt="email icon" class="icon">
-                        4971-0222
-                    </span>
-                </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div style="text-align: center; margin-top: 30px; font-style: italic">
-                    Actualizado: Junio 2025
-                </div>
-        </header>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="repos.html" class="nav-link">Repositorios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <div class="left-column">
-                <section class="section">
-                    <h2>Perfil Profesional</h2>
-                    <p class="profile-text">
-                        Estudiante de Ingeniería en Ciencias y Sistemas con experiencia en atención al cliente y ventas. 
-                        Me destaco por ser responsable, adaptable y con buena disposición para aprender. He liderado pequeñas 
-                        tareas operativas, manejado caja e inventario, y brindado un servicio enfocado en la satisfacción del cliente. 
-                        Actualmente continúo mi formación técnica y desarrollo personal con el objetivo de obtener estabilidad 
-                        laboral y crecer profesionalmente dentro de una empresa comprometida.
-                    </p>
-                </section>
-
-                <section class="section">
-                    <h2>Habilidades</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Técnicas</h3>
-                            <div class="skill-item">Python (Intermedio)</div>
-                            <div class="skill-item">C++</div>
-                            <div class="skill-item">Java/Kotlin</div>
-                            <div class="skill-item">HTML5/CSS3</div>
-                            <div class="skill-item">JavaScript</div>
-                            <div class="skill-item">Excel Avanzado</div>
-                            <div class="skill-item">Power BI</div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Blandas</h3>
-                            <div class="skill-item">Liderazgo de equipos</div>
-                            <div class="skill-item">Comunicación efectiva</div>
-                            <div class="skill-item">Resolución de problemas</div>
-                            
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h2>Portafolio</h2>
-                    <div class="repository-item">
-                        <div class="repo-title">
-                            <div class="job-title">
-                            <a href="https://rod-rod-rod.github.io/contragenerator/index.html" target="_blank" class="cert-link">
-                                Creador de Contraseñas
-                            </a>
-                        </div>
-                        <p>Generador de contraseñas seguras y únicas para mejorar la seguridad digital. Permite crear una contraseña de 3 tipos:</p>
-                        <ul>
-                            <li>Simple</li>
-                            <li>Con un dato personalizado</li>
-                            <li>Con una longuitud personalizada</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="repository-item">
-                        <div class="repo-title">
-                            <div class="job-title">
-                            <a href="https://rod-rod-rod.github.io/atrapanumero/" target="_blank" class="cert-link">
-                                Atrapa el número
-                            </a>
-                        </div>
-                        <p>
-                            Juego interactivo en el que debes encontrar y seleccionar el
-                            número correcto entre 0 y 99 antes de que se acabe el tiempo (15 segundos).
-                            Pon a prueba tu agilidad mental y precisión en cada partida.
-                        </p>
-                        </div>
-                    </div>
-                    <a href="portafolio.html" class="more-projects-link">
-                        <div class="more-proyects">Ver más proyectos ▶️</div>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="hero-title">Desarrollador Creativo</h1>
+                <p class="hero-subtitle">Construyendo soluciones con código y naturalidad</p>
+                <p class="hero-description">
+                    Soy Rodrigo, desarrollador fullstack apasionado por crear experiencias digitales 
+                    significativas. Me especializo en Java, Spring Boot, y desarrollo web interactivo. 
+                    Combino la lógica técnica con un toque humano en cada proyecto.
+                </p>
+                <div class="hero-buttons">
+                    <a href="repos.html" class="btn btn-primary">
+                        <i class="fas fa-code-branch"></i> Ver Mis Repositorios
                     </a>
-                </section>
+                    <a href="#contacto" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contactarme
+                    </a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="right-column">
-                <section class="section">
-                    <h2>Educación</h2>
-                    <div class="education-item">
-                        <div class="job-title">Ingeniería en Ciencias y Sistemas</div>
-                        <div class="company">Universidad Mariano Gálvez</div>
-                        <div class="date">2024 - Actual (3er semestre)</div>
+    <!-- ABOUT SECTION -->
+    <section id="sobre-mi" class="section about">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-user"></i> Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Un desarrollador con pasión por lo humano</h3>
+                    <p>
+                        He estado programando durante años, trabajando en proyectos que van desde 
+                        aplicaciones de escritorio hasta soluciones web complejas. Mi enfoque siempre 
+                        ha sido crear código limpio, mantenible y, lo más importante, que resuelva 
+                        problemas reales.
+                    </p>
+                    <p>
+                        Mi trayectoria incluye experiencia en Java, Spring Boot, C++, C#, y tecnologías 
+                        web modernas. Pero más allá del código, creo en la importancia de entender 
+                        los problemas desde la perspectiva del usuario y crear soluciones que sean 
+                        tanto técnicamente sólidas como intuitivas.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h4>8+</h4>
+                        <p>Proyectos Principales</p>
                     </div>
-                    
-                    <div class="education-item">
-                        <div class="job-title">Bachiller en Ciencias y Letras con Orientación en Computación</div>
-                        <div class="company">Colegio La Inmaculada</div>
-                        <div class="date">2021 - 2022</div>
+                    <div class="stat">
+                        <h4>15+</h4>
+                        <p>Repositorios</p>
                     </div>
-                </section>
-
-                <section class="section">
-                    <h2>Certificaciones</h2>
-                    <div class="certification-item">
-                        <div class="job-title">
-                            <a href="https://drive.google.com/file/d/1xmuWz7jQi8hHvbHQXAdr9-Ws4qZ7o4Oo/view?usp=sharing" target="_blank" class="cert-link">
-                                Introducción a Java y Kotlin
-                            </a>
-                        </div>
-                        <div class="company">USAC, Programa de Cursos Libres</div>
-                        <div class="date">Mayo 2025 - 16 horas</div>
-                        <p>Fundamentos de programación móvil, estructuras de datos y desarrollo de aplicaciones básicas.</p>
+                    <div class="stat">
+                        <h4>100%</h4>
+                        <p>Open Source</p>
                     </div>
-                    
-                    <div class="certification-item">
-                        <div class="job-title">
-                            <a href="https://drive.google.com/file/d/1YUGf7vjcJCnwATf2CHjlEDah_VLUAwA1/view?usp=sharing" target="_blank" class="cert-link">
-                                Protocolo, Etiqueta e Imagen Profesional
-                            </a>
-                        </div>
-                        <div class="company">USAC, Programa de Cursos Libres</div>
-                        <div class="date">Mayo 2025 - 16 horas</div>
-                        <p>Técnicas de comunicación ejecutiva, manejo de imagen corporativa y protocolo empresarial.</p>
-                    </div>
-                    
-                    <div class="certification-item">
-                        <div class="job-title">
-                            <a href="https://openbadgefactory.com/v1/assertion/8c88944d40e198747ea9dab5aacf21297e6d3724" target="_blank" class="cert-link">
-                                Exportando Creatividad: Industrias Creativas en América Latina
-                            </a>
-                        </div>
-                        <div class="company">BID-INTAL</div>
-                        <div class="date">Agosto 2024 - 8 horas</div>
-                        <p>Estrategias para exportación de servicios creativos, SBC y tecnologías digitales.</p>
-                    </div>
-                </section>
-
-                <section class="section">
-                    <h2>Información Adicional</h2>
-                    <div class="additional-info">
-                        <div class="info-grid">
-                            <div class="info-item">
-                                <div>
-                                    <strong>Idiomas:</strong><br>
-                                    Español (nativo)<br>
-                                    Inglés (intermedio)
-                                </div>
-                            </div>
-                            <div class="info-item">
-                                <div>
-                                    <strong>Disponibilidad:</strong><br>
-                                    Full-time<br>
-                                    (excepto sábados)
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
+                </div>
             </div>
-        
-        </main>
-    </div>
-    <a class="print-btn" title="Imprimir CV" href="https://drive.google.com/file/d/1ExZgrCTI3mT3Se2-9LdtxCcNkuKma2M-/view?usp=sharing" target="_blank">
-        CV en PDF
-    </a>
+        </div>
+    </section>
+
+    <!-- REPOS SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-folder-open"></i> Mis Repositorios</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #333;">
+                Tengo dos cuentas de GitHub activas. <strong>RodRodRod</strong> es mi cuenta principal de desarrollo, 
+                mientras que <strong>RodrigoYalibat</strong> es mi cuenta estudiantil con proyectos académicos.
+            </p>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="repos.html" class="btn btn-primary">
+                    <i class="fas fa-th-list"></i> Ver Todos los Repositorios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-comments"></i> Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Hablemos</h3>
+                    <p>
+                        Siempre estoy interesado en escuchar sobre nuevos proyectos y oportunidades. 
+                        Puedes contactarme a través de cualquiera de los canales abajo o completar 
+                        el formulario a la derecha.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Rod-Rod-Rod" target="_blank">GitHub Principal</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/RodrigoYalibat" target="_blank">GitHub de Universidad</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contactoraydc@gmail.com">Email</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/raydc2005" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgdwbpw" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                    <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 600;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Rodrigo Yalibat - Todos los derechos reservados</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Rod-Rod-Rod" target="_blank" title="GitHub Principal">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/RodrigoYalibat" target="_blank" title="GitHub de Universidad">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
